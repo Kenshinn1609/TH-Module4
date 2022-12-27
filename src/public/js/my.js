@@ -1,5 +1,5 @@
 const searchProduct = (value) => {
-    axios.get('/admin/products/search', {
+    axios.get('/staff/search', {
         params: {
             keyword: value
         }

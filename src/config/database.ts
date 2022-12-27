@@ -1,6 +1,6 @@
 import * as mongoose from "mongoose";
 
-mongoose.connect("mongodb+srv://theanh:theanh3012@theanh.ord0sxz.mongodb.net/C4").catch(err =>{
+mongoose.connect("mongodb+srv://kenshin:hoangdaica121@cluster0.am5uqky.mongodb.net/staff").catch(err =>{
     console.log(err);
 });
 

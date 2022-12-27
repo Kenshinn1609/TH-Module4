@@ -2,15 +2,16 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose = require('../config/database');
 const { Schema } = mongoose;
-const userSchema = new mongoose.Schema({
+const staffSchema = new mongoose.Schema({
     name: String,
     code: String,
     age: Number,
-    Department: {
+    salary: String,
+    department: {
         type: Schema.Types.ObjectId,
         ref: 'Department'
     }
 });
-const UserSchema = mongoose.model('User', userSchema);
-exports.default = UserSchema;
-//# sourceMappingURL=user.js.map
+const StaffSchema = mongoose.model('Staff', staffSchema);
+exports.default = StaffSchema;
+//# sourceMappingURL=staff.js.map

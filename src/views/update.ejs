@@ -282,7 +282,7 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Student List</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Staff List</h6>
                     </div>
                     <div class="card-body">
 
@@ -295,38 +295,33 @@
 
                             </div>
                             <div class="form-group">
-                                <label for="">Class</label>
+                                <label for="">Department</label>
                                 <select class="form-control" id="" name="class">
-                                    <% classStudents.forEach(item => { %>
-                                        <option <%= item._id.toString() === data.class?._id?.toString() ? "selected" : "" %>
+                                    <% department.forEach(item => { %>
+                                        <option <%= item._id.toString() === data.department?._id?.toString() ? "selected" : "" %>
                                                 value="<%= item._id %>"><%= item.name %></option>
                                     <% }) %>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="">TheoreticalScore</label>
+                                <label for="">Age</label>
                                 <input type="number" name="theoreticalScore" class="form-control" id="" placeholder=""
-                                       value="<%= data.theoreticalScore %>">
+                                       value="<%= data.age %>">
                             </div>
                             <div class="form-group">
-                                <label for="">PracticePoints</label>
-                                <input type="number" class="form-control" id="" name="practicePoints"
-                                       value="<%= data.practicePoints %>" >
+                                <label for="">Code</label>
+                                <input type="number" class="form-control" id="" name="code"
+                                       value="<%= data.code %>" >
 
                             </div>
 
                             <div class="form-group">
-                                <label for="">Evaluate</label>
-                                <textarea class="form-control" id="" rows="3" name="evaluate" placeholder="" ><%= data.evaluate %></textarea >
+                                <label for="">Salary</label>
+                                <textarea class="form-control" id="" rows="3" name="salary" placeholder="" ><%= data.salary %></textarea >
                             </div>
-                            <div class="form-group">
-                                <label for="">Describe</label>
-                                <textarea class="form-control" id="" rows="3" name="describe" placeholder=""><%= data.describe %></textarea>
-                            </div>
-
 
                            <button type="submit" class="btn btn-primary">Update</button>
-                                <a href="/students" class="btn btn-primary">Cancel</a>
+                                <a href="/staff" class="btn btn-primary">Cancel</a>
                         </form>
                     </div>
                 </div>

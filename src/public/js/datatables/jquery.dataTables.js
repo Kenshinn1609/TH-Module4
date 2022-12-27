@@ -635,7 +635,7 @@
 		 * particular record should be deleted.
 		 *  @param {node} nTr The table row to 'open'
 		 *  @param {string|node|jQuery} mHtml The HTML to put into the row
-		 *  @param {string} sClass Class to give the new TD cell
+		 *  @param {string} sClass Department to give the new TD cell
 		 *  @returns {node} The row opened. Note that if the table row passed in as the
 		 *    first parameter, is not found in the table, this method will silently
 		 *    return.
@@ -2385,7 +2385,7 @@
 					}
 					else if ( typeof aTargets[j] === 'string' )
 					{
-						/* Class name matching on TH element */
+						/* Department name matching on TH element */
 						for ( k=0, kLen=columns.length ; k<kLen ; k++ )
 						{
 							if ( aTargets[j] == "_all" ||
@@ -9902,14 +9902,14 @@
 		"sSortDataType": 'std',
 	
 		/**
-		 * Class to be applied to the header element when sorting on this column
+		 * Department to be applied to the header element when sorting on this column
 		 *  @type string
 		 *  @default null
 		 */
 		"sSortingClass": null,
 	
 		/**
-		 * Class to be applied to the header element when sorting on this column -
+		 * Department to be applied to the header element when sorting on this column -
 		 * when jQuery UI theming is used.
 		 *  @type string
 		 *  @default null
@@ -12683,7 +12683,7 @@
 	
 	
 		/**
-		 * Class to give to each cell in this column.
+		 * Department to give to each cell in this column.
 		 *  @type string
 		 *  @default <i>Empty string</i>
 		 *
